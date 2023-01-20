@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4158d0;
+}
+
+#title {
+  margin-bottom: 0;
+}
+
+#description {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.container {
+  background-image: radial-gradient(
+    circle 588px at 31.7% 40.2%,
+    rgba(225, 200, 239, 1) 21.4%,
+    rgba(163, 225, 233, 1) 57.1%
+  );
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #4158d0;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+#survey-form {
+  color: #4158d0;
+  margin: 30px;
+  padding-top: 40px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+span {
+  font-size: 13px;
+}
+
+#name,
+#email,
+#number {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: #495057;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.radio-para {
+  margin-bottom: 5px;
+}
+
+.radio {
+  min-height: 1.00rem;
+  min-width: 1.00rem;
+}
+
+.dropdown-para {
+  margin-bottom: 5px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #495057;
+  outline: none;
+  font-size: 18px;
+}
+
+.checkbox-para {
+  margin-bottom: 5px;
+}
+
+.checkbox-content {
+  min-height: 1.00rem;
+  min-width: 1.00rem;
+}
+
+#textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  color: #495057;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.textarea-para {
+  margin-bottom: 5px;
+}
+
+.btn-submit {
+  cursor: pointer;
+  width: 100%;
+  margin: 20px 0 60px 0;
+  color: white;
+  font-size: 18px;
+  padding: 15px 0;
+  font-weight: 500;
+  background: #37af65;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #eee;
+}
+
+.btn-submit:hover {
+  background: darkgreen;
+  transition: 0.5s;
+}

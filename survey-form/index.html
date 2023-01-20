@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePen - Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main class="container">
+      <form id="survey-form" action="freecodecamp.org" method="post">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+        <label for="number" id="number-label">Age <span>(optional)</span></label><br>
+        <input type="number" name="age" id="number" placeholder="Age" min="10" max="95"><br>
+        <p class="dropdown-para">Which option best describes your current role?</p>
+        <select id="dropdown" class="dropdown" required>
+          <option disabled selected>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+        <p class="radio-para">Would you recommend freeCodeCamp to a friend?</p>
+        <input class="radio" type="radio" name="recommendation" value="definetely" checked> Definitely<br>
+        <input class="radio" type="radio" name="recommendation" value="maybe"> Maybe<br>
+        <input class="radio" type="radio" name="recommendation" value="not-sure"> Not Sure<br>
+        <p class="dropdown-para">What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown" class="dropdown" required>
+          <option disabled selected>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+        <div class="checkbox-form">
+          <p class="checkbox-para">What would you like to see improved? <span>(Check all that apply)</span></p>
+          <input class="checkbox-content" type="checkbox" name="" value="front-end-projects"> Front-end Projects<br>
+          <input class="checkbox-content" type="checkbox" name="" value="back-end-project"> Back-end Projects<br>
+          <input class="checkbox-content" type="checkbox" name="" value="data-visualization"> Data Visualization<br>
+          <input class="checkbox-content" type="checkbox" name="" value="challenges"> Challenges<br>
+          <input class="checkbox-content" type="checkbox" name="" value="open-source-community"> Open Source Community<br>
+          <input class="checkbox-content" type="checkbox" name="" value="gitter-help-rooms"> Gitter help rooms<br>
+          <input class="checkbox-content" type="checkbox" name="" value="videos"> Videos<br>
+          <input class="checkbox-content" type="checkbox" name="" value="city-meetups"> City Meetups<br>
+          <input class="checkbox-content" type="checkbox" name="" value="wiki"> Wiki<br>
+          <input class="checkbox-content" type="checkbox" name="" value="forum"> Forum<br>
+          <input class="checkbox-content" type="checkbox" name="" value="additional-courses"> Additional Courses<br>
+        </div>
+        <p class="textarea-para">Any comments or suggestions?</p>
+        <textarea id="textarea" placeholder="Enter your comment here..."></textarea><br>
+        <button id="submit" class="btn-submit">Submit</button>
+      </form>
+
+    </main>
+  </body>
+
+</html>
